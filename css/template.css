@@ -1,5 +1,6 @@
 *{
     font-family: 'Roboto', sans-serif;
+    padding: 0px;
 }
 
 /* Header */
@@ -11,7 +12,7 @@ header{
 
 .menu-bg{
     display: flex;
-    width: 1050px;
+    width: 1100px;
     padding: 10px;
     justify-content: space-between;
 }
@@ -20,6 +21,13 @@ header{
     display: flex;
     align-items: center;
     margin: 4px;
+    background-color: #eceaea;
+    margin-left: 8px;
+    height: 53px;
+}
+
+.menu-logo .logo{
+    width: 110px;
 }
 
 .menu{
@@ -92,7 +100,7 @@ header{
     justify-content: center;
     align-items: center;
     font-size: 13px;
-    height: 53;
+    height: 53px;
 }
 
 .pix-info a{
@@ -163,19 +171,27 @@ header{
  .container-info1,.container-info2{
      background-color: #fff;
      padding: 30px;
-     margin-left: 15px;
      margin-bottom: 60px;
      border-radius: 10px;
      width: 375px;
      height: 327px;
      text-align: center;
+     display:flex;
+     flex-direction: column;
+     align-items: center;
+ }
 
+ .container-info2{
+     margin-left: 12px;
+ }
+
+ .container-info1{
+    margin-right: 12px;
  }
  
  .container-info1 img,.container-info2 img{
      width: 280px;
      height: 104px;
-     align-items: center;
  }
  
  .container-info1 button,.container-info2 button{
@@ -188,13 +204,17 @@ header{
      border: none;
  }
 
- .container-info1 h3{
+ .container-info1 button:hover,.container-info2 button:hover{
+    background-color: #007EB5;
+}
+
+ .container-info1 h2{
      font-weight: normal;
      display: inline-block;
      width: 275px;
  }
 
- .container-info2 h3{
+ .container-info2 h2{
     font-weight: normal;
     display: inline-block;
     width: 374px;
@@ -211,21 +231,45 @@ header{
  footer{
      display: flex;
      justify-content: center;
-     padding: 50px;
+     padding: 30px;
  }
 
  .footer-container{
      display: flex;
-     width: 900px;
+     width: 1100px;
      justify-content: space-between;
  }
+
+ .footer-logo{
+    display: flex;
+    align-items: center;
+    margin: 4px;
+    background-color: #eceaea;
+    height: 60px;
+    margin-top: 40px;
+}
+
+.footer-logo .logo{
+    width: 110px;
+}
 
  .footer-lista{
      display: flex;
      font-size: 12px;
  }
 
- 
+ .footer-lista div{
+    margin: 30px;
+}
+
+.footer-lista div h4 a{
+    color: #000;
+    text-decoration: none;
+}
+
+.footer-lista div h4 a:hover{
+    color: #009ee3;
+}
 
  .footer-lista div ul li {
      display: flex;
@@ -236,6 +280,10 @@ header{
  .footer-lista div ul li a{
     text-decoration: none;
     color: #000;
+ }
+
+ .footer-lista div ul li a:hover{
+    color: #009ee3;
  }
 
 .footer-lista .list-1{
@@ -289,6 +337,7 @@ header{
 
  .footer-2-bg{
      margin-left: 15px;
+     padding: 20px;
  }
 
  .footer-redes img{
@@ -302,8 +351,8 @@ header{
  }
 
  .sidebar{
-     margin: 20px;
+     margin: 6px;
      background-color: #dfd9d9;
-     width: 1100px;
+     width: 1150px;
      height: 1px;
  }
